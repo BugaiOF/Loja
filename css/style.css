@@ -5,24 +5,40 @@
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    
 }
-
+/* CORES PRINCIPAIS DO PROJETO
+    #4218D9 AZUL MEIO FORTE
+    #4B1DF2 AZUL MEIO FRACO
+    #7D6BF2 AZUL MAIS FRACO
+    #C4BDF2 AZUL MEIO PASTEL
+    WHITE
+*/
 body, html {
-    background-color: rebeccapurple;
+    background: linear-gradient(68.15deg, #4218D9 16.62%, #4B1DF2 85.61%);
 }
 
 header {
-    background-color: lightgray; 
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
 }
 
 header >h1 {
     text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
 }
 
 nav ul {
     list-style-type: none;
-    background-color: gray;
+    
     text-align: center;
 }
 
@@ -30,13 +46,17 @@ nav li {
     display: inline-block;
     padding: 10px;
     color: white;
+    border-radius: 50px;
+    background-color: #7d6bf277;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 main {
-    background-color: rgb(238, 37, 188);
+    
     width: 95vw;
     margin: auto;
-    height: 100vh;
+    height: 100vh; 
 }
 
 /* a {
