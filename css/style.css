@@ -65,10 +65,11 @@ main {
 } */
 
 main > .prateleira {
-    background-color: red; 
+    background-color: #190564; 
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    flex-direction: column;
 }
 
 .produtos {
@@ -81,6 +82,8 @@ main > .prateleira {
     flex-direction: column;
     text-align: center;
 }
+
+
 
 .detalhes {
     padding: 0 1rem 1rem;
