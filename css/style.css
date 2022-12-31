@@ -47,7 +47,7 @@ nav li {
     padding: 10px;
     color: white;
     border-radius: 50px;
-    background-color: #7d6bf277;
+    background-color:  #4B1DF2;
     font-weight: 400;
     font-size: 18px;
 }
@@ -65,7 +65,7 @@ main {
 } */
 
 main > .prateleira {
-    background-color: red;
+    background-color: red; 
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
@@ -75,7 +75,7 @@ main > .prateleira {
     color: #fff;
     box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
     border-radius: 4px;
-    background-color: #252043;
+    background-color:  #4b1df2;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -92,7 +92,7 @@ main > .prateleira {
 .img-container{
     aspect-ratio: 1/1;
     object-fit: contain;
-    background: rgb(255, 255, 255);
+    background:  #7D6BF2;
     text-align: center;
     height: 300px;
 }
