@@ -3,6 +3,9 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
 }
 
 body, html {
@@ -43,22 +46,22 @@ main {
 
 main > .prateleira {
     background-color: red;
-    
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
 }
 
 .produtos {
     color: #fff;
     background-color: #2b1c7c;
-    overflow: hidden;
-    display: inline-block;
+    overflow: hidden; 
+    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     position: relative;
-    left: 5%;
-    
-
-    
+    margin-top: 5px;
+    border: black solid 1px;
 }
 
 /* .detalhes {
@@ -68,7 +71,7 @@ main > .prateleira {
 .img-container{
     aspect-ratio: 1/1;
     object-fit: contain;
-    background: white;
+    background: rgb(255, 255, 255);
     text-align: center;
-    height: 250px;
+    height: 300px;
 }
