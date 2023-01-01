@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Hind+Madurai:wght@300&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Hind Madurai', sans-serif;
+
     box-sizing: border-box;
 }
 /* CORES PRINCIPAIS DO PROJETO
@@ -12,12 +15,23 @@
     #7D6BF2 AZUL MAIS FRACO
     #C4BDF2 AZUL MEIO PASTEL
     WHITE
+
+    #610769 cor da roleta e dos detalehes
+
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Hind Madurai', sans-serif;
 */
 body, html {
-    background: linear-gradient(68.15deg, #4218D9 16.62%, #4B1DF2 85.61%);
+    background-image: linear-gradient(to right bottom, #330537, #4f025d, #6a0088, #8202b7, #9612eb);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
 }
 
 header {
+    
+    border-bottom: 3px solid #330537; 
     
     display: flex;
     flex-direction: row;
@@ -47,7 +61,7 @@ nav li {
     padding: 10px;
     color: white;
     border-radius: 50px;
-    background-color:  #4B1DF2;
+    background-color:  #330537;
     font-weight: 400;
     font-size: 18px;
 }
@@ -64,8 +78,24 @@ main {
     text-decoration: none;
 } */
 
+.prod-header {
+    border-bottom: 3px solid #330537; 
+    border-top: 3px solid #330537;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod-header > h1 {
+    color: white;
+    border: #330537  3px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 main > .prateleira {
-    background-color: #190564; 
+   /*  background-color: #190564;  */
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
@@ -76,7 +106,7 @@ main > .prateleira {
     color: #fff;
     box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
     border-radius: 4px;
-    background-color:  #4b1df2;
+    background-color:  #610769 ;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -89,13 +119,23 @@ main > .prateleira {
     padding: 0 1rem 1rem;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    background-color: #330537;
+
 }
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    
+  }
 
 .img-container{
     aspect-ratio: 1/1;
     object-fit: contain;
-    background:  #7D6BF2;
+    background:  rgba(255, 255, 255, 0.438);
     text-align: center;
     height: 300px;
 }
