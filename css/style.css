@@ -30,14 +30,17 @@ body, html {
 }
 
 header {
-    
     border-bottom: 3px solid #330537; 
-    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding: 24px;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
 }
 
 header >h1 {
@@ -111,6 +114,7 @@ main > .prateleira {
     display: flex;
     flex-direction: column;
     text-align: center;
+    
 }
 
 
@@ -139,4 +143,14 @@ main > .prateleira {
     background:  rgba(255, 255, 255, 0.438);
     text-align: center;
     height: 300px;
+}
+
+#btn {
+   text-decoration: none;
+   width: 100%;
+   border-radius: 10px;
+}
+
+#btn:hover {
+    background-color: purple;
 }
