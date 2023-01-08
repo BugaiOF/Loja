@@ -112,7 +112,11 @@ main > .prateleira {
     display: flex;
     flex-direction: column;
     text-align: center;
-    
+    transition: transform .2s;
+}
+
+.produtos:hover{
+    transform: scale(1.1);
 }
 
 .detalhes {
@@ -139,7 +143,12 @@ main > .prateleira {
     background:  rgba(255, 255, 255, 0.438);
     text-align: center;
     height: 300px;
+    transition: transform .2s;
 }
+
+/* .img-container:hover{
+    transform: scale(1.2);
+} */
 
 #btn {
    text-decoration: none;
