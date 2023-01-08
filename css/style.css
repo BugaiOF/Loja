@@ -10,10 +10,8 @@
     box-sizing: border-box;
 }
 /* CORES PRINCIPAIS DO PROJETO
-    #4218D9 AZUL MEIO FORTE
-    #4B1DF2 AZUL MEIO FRACO
-    #7D6BF2 AZUL MAIS FRACO
-    #C4BDF2 AZUL MEIO PASTEL
+          detalhes #610769
+          backgraund #8202b7 e #9612eb
     WHITE
 
     #610769 cor da roleta e dos detalehes
@@ -22,7 +20,7 @@
     font-family: 'Hind Madurai', sans-serif;
 */
 body, html {
-    background-image: linear-gradient(to right bottom, #330537, #4f025d, #6a0088, #8202b7, #9612eb);
+    background-image: linear-gradient(to right bottom, #8202b7, #9612eb);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -30,7 +28,7 @@ body, html {
 }
 
 header {
-    border-bottom: 3px solid #330537; 
+    border-bottom: 3px solid #610769; 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -64,7 +62,7 @@ nav li {
     padding: 10px;
     color: white;
     border-radius: 50px;
-    background-color:  #330537;
+    background-color:  #610769;
     font-weight: 400;
     font-size: 18px;
 }
@@ -82,8 +80,8 @@ main {
 } */
 
 .prod-header {
-    border-bottom: 3px solid #330537; 
-    border-top: 3px solid #330537;
+    border-bottom: 3px solid #610769; 
+    border-top: 3px solid #610769;
     height: 80px;
     display: flex;
     align-items: center;
@@ -92,7 +90,7 @@ main {
 
 .prod-header > h1 {
     color: white;
-    border: #330537  3px solid;
+    border: #610769  3px solid;
     border-radius: 10px;
     padding: 5px;
 }
@@ -117,13 +115,11 @@ main > .prateleira {
     
 }
 
-
-
 .detalhes {
     padding: 0 1rem 1rem;
     display: flex;
     flex-direction: column;
-    background-color: #330537;
+    background-color: #610769;
 
 }
 
