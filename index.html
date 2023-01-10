@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <title>Loja</title>
 </head>
 <body>
@@ -13,11 +14,13 @@
             <h1>Loja do Bugai</h1>
            <nav>
             <ul class="menu-itens">
+            <a href="#" onclick="toggleCart()"><li>carrinho</li></a>
             <a href="#"><li>Camisetas</li></a>
             <a href="#"><li>Moletons</li></a>
             <a href="#"><li>Relogios</li></a>
             <a href="#"><li>Cachecois</li></a>
-             <a href="#"><li>Headsets</li></a>
+            <a href="#"><li>Headsets</li></a>
+            
             </ul>
         </nav>
     </header>
@@ -30,23 +33,23 @@
         <div class="prod-header"><h1>Produtos</h1></div>
         <section class="prateleira">
             <div class="produtos">
-                <img src="image/cachecol.png" alt="Cachecol Masculino " class="img-container">
+                <img src="image/cachecol.png" alt="Produto 1" class="img-container">
             <div class="detalhes">
                 <h1>Cachecol Preto </h1>
                 <p>Cachecol confeccionado em fios de acrílico</p><br><br>
                 <small>Vendido por <strong>BugaiStore</strong></small>
                 <p>POR APENAS <br><strong>R$50.00</strong></p>
-                <button id="btn"><span class="material-symbols-outlined">shopping_cart</span></button>
+                <button id="btn" onclick="addToCart(1)"><span class="material-symbols-outlined">shopping_cart</span></button>
             </div>
             </div>  
              <div class="produtos">
-                <img src="image/camiseta.png" alt="Cachecol Masculino " class="img-container">
+                <img src="image/camiseta.png" alt="Produto 2" class="img-container">
             <div class="detalhes">
                 <h1>Camiseta Shingeki </h1>
                 <p>Cachecol confeccionado em fios de acrílico</p><br><br>
                 <small>Vendido por <strong>BugaiStore</strong></small>
                 <p>POR APENAS <br><strong>R$30.00</strong></p>
-                <button id="btn"><span class="material-symbols-outlined">shopping_cart</span></button>
+                <button id="btn" onclick="addToCart(2)"><span class="material-symbols-outlined">shopping_cart</span></button>
             </div>
         </div>
         <div class="produtos">
@@ -102,10 +105,14 @@
             </div>
         </div>                
         </section>
+        <div id="cart">
+            <!-- Conteúdo do carrinho será exibido aqui -->
+          </div>
     </main>
     <footer>
 
         
     </footer>
+    <script src="JS/script.js"></script>
 </body>
 </html>
