@@ -9,18 +9,19 @@
 
     box-sizing: border-box;
 }
-/* CORES PRINCIPAIS DO PROJETO
-          detalhes #610769
-          backgraund #8202b7 e #9612eb
-    WHITE
-
-    #610769 cor da roleta e dos detalehes
-
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Hind Madurai', sans-serif;
-*/
+/* :root {
+    --color-light-50: #f8fafc;
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000; 
+    --color-purlple-50: #7c3aed;
+    --color-purlple-100: #a855f7;
+    --color-purlple-200: #bf46ef;
+    --color-gradient: linear-gradient(90deg, var(--color-purlple-50), var(--color-purlple-100), var(--color-purlple-200));
+}
+ */
 body, html {
-    background-image: linear-gradient(to right bottom, #8202b7, #9612eb);
+    background-image: linear-gradient(90deg, #7c3aed, #a855f7, #bf46ef);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -28,7 +29,7 @@ body, html {
 }
 
 header {
-    border-bottom: 3px solid #610769; 
+    border-bottom: 3px solid #312d37; 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,7 +64,7 @@ nav li {
 
     color: white;
     border-radius: 50px;
-    background-color:  #610769;
+    background-color:  #312d37;
     font-weight: 400;
     font-size: 18px;
 }
@@ -78,8 +79,8 @@ nav li {
     height: 400px;
     color: white;
     overflow-y: auto;
-    border: black 1px solid;
-    background-image: linear-gradient(to right bottom, #8202b7, #9612eb);
+    border: #312d37 1px solid;
+    background-image: linear-gradient(to right bottom, #7c3aed, #a855f7);
     border-radius: 10px;
     right: 10px;
   }
@@ -99,8 +100,8 @@ main {
 } */
 
 .prod-header {
-    border-bottom: 3px solid #610769; 
-    border-top: 3px solid #610769;
+    border-bottom: 3px solid #312d37; 
+    border-top: 3px solid #312d37;
     height: 80px;
     display: flex;
     align-items: center;
@@ -109,7 +110,7 @@ main {
 
 .prod-header > h1 {
     color: white;
-    border: #610769  3px solid;
+    border: #312d37  3px solid;
     border-radius: 10px;
     padding: 5px;
 }
@@ -126,7 +127,7 @@ main > .prateleira {
     color: #fff;
     box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
     border-radius: 4px;
-    background-color:  #610769 ;
+    background-color:  #312d37 ;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -135,15 +136,15 @@ main > .prateleira {
 }
 
 .produtos:hover{
-    transform: scale(1.1);
-    background-color: purple;
+    transform: scale(1.05);
+    background-color: #797984;
 }
 
 .detalhes {
     padding: 0 1rem 1rem;
     display: flex;
     flex-direction: column;
-    background-color: #610769;
+    background-color: #312d37;
 
 }
 
@@ -177,5 +178,5 @@ main > .prateleira {
 }
 
 #btn:hover {
-    background-color: purple;
+    background-color: #797984;
 }
